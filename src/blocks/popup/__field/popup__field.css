@@ -1,0 +1,16 @@
+.popup__field {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 57px;
+}
+
+/* .popup__field:nth-child(1) {
+    min-height: 75px;
+}
+
+@media screen and (max-width: 649px) {
+    .popup__field:last-of-type {
+        min-height: 72px;
+    }
+} */

@@ -1,0 +1,10 @@
+.element__image {
+    width: 282px;
+    height:282px;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0 0;
+    margin: 0 auto;
+    cursor: pointer;
+    background-size: cover;
+    background-color: #000;
+}

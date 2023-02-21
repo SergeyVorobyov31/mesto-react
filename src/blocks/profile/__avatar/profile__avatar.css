@@ -1,0 +1,12 @@
+.profile__avatar {
+    max-width: 120px;
+    min-height: 120px;
+    border-radius: 50%;
+    transition: 0.2s linear;
+}
+
+.profile__avatar:hover {
+    cursor: pointer;
+    background-color: #000;
+    opacity: 0.25;
+}

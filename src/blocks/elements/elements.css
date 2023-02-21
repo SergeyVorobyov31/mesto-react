@@ -1,0 +1,14 @@
+.elements {
+    display: flex;
+    justify-content: center;
+    max-width: 880px;
+    margin: 0 auto 66px;
+    padding: 0;
+}
+
+@media screen and (max-width: 649px) {
+    .elements {
+        min-width: 282px;
+        margin: 0 auto 48px;
+    }
+}
