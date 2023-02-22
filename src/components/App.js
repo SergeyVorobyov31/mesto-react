@@ -18,7 +18,7 @@ function App() {
     const [userDescription, setUserDescription] = useState("");
     const [userAvatar, setUserAvatar] = useState("");
     const [imagePopup, setIsOpenPopupImage] = useState(false);
-    const [selectedCard, setSelectedcard] = useState([]);
+    const [selectedCard, setSelectedcard] = useState({});
     
     useEffect(() => {
         fetchUserData();
@@ -32,7 +32,8 @@ function App() {
             setUserName(data.name);
             setUserDescription(data.about)
             setUserAvatar(data.avatar)
-        });
+        })
+        .catch(err => console.log(err));
     }
 
     function popupProfileOpen() {
@@ -71,13 +72,13 @@ function App() {
         .then(data => {
             return setInitialCards(data);
         })
+        .catch(err => console.log(err));
     }
 
     function handleCardClick(card) {
         setIsOpenPopupImage(true);
         setSelectedcard(card);
         document.addEventListener("keydown", handleEscClose);
-        console.log(card);
     }
 
     return (

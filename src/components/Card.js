@@ -5,7 +5,7 @@ function Card({item, onCardClick}) {
     }
 
     return (
-        <div className="element-template" key={item._id}>
+        <div className="element-template">
             <li className="element">
                 <img className="element__image" alt={item.name} src={item.link} onClick={handleClick} />
                 <button className="element__delete" type="button"></button>
