@@ -1,11 +1,11 @@
 import Card from "./Card.js";
 
-function Cards({array, onCardClick}) {
+function Cards({array, onCardClick, onCardLike, onCardDelete}) {
     return(
         <ul className="elements__list">
             {array.map((item, i) => {
                 return(
-                    <Card item={item} key={item._id} onCardClick={onCardClick}/>
+                    <Card card={item} key={item._id} onCardClick={onCardClick} onCardLike={onCardLike} onCardDelete={onCardDelete}/>
                 );    
             })}
         </ul>
